@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Praktikum 4</title>
+</head>
+
+<body>
+
+<button type="button" id="tambah">click me</button>
+<button type="button" id="hapus">click me too</button>
+
+<p id="nama"></p>
+<p id="nim"></p>
+
+<script>
+function tambah() {
+    document.getElementById("nama").innerHTML = "Stesa Aurel Titania";
+    document.getElementById("nim").innerHTML = "535250074";
+}
+
+document.getElementById("tambah").addEventListener("click", tambah);
+
+function hapus() {
+    document.getElementById("nama").innerHTML = "";
+    document.getElementById("nim").innerHTML = "";
+}
+
+document.getElementById("hapus").addEventListener("click", hapus);
+</script>
+
+</body>
+</html>
